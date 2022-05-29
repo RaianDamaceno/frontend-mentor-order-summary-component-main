@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root  {
+    --background-color: hsl(225, 100%, 94%);
+    --background-card-color: hsl(245, 75%, 52%);
+    --background-price: #F7F9FF;
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --white: #FFFFFF
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./images/pattern-background-desktop.svg"), var(--background-color);
+    background-repeat: no-repeat;
+    background-size: 100% 437px;
+}
+
+h1 {
+    top: 0 !important;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    text-align: center;
+    color: #1F2E55;
+    margin-top: 45px;
+}
+
+h3 {
+    height: 78px;
+    top: calc(50% - 78px/2 + 9.5px);
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #717FA6;
+}
+
+.container {
+    width: 450px;
+    height: 697px;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    border-radius: 20px;
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 450px;
+    height: 220px;
+    background-image: url('./images/illustration-hero.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.content {
+    width: 354px;
+    height: 384px;
+}
+
+.plan {
+    background-color: var(--background-price);
+    border-radius: 11px;
+    height: 98px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.value, .change-plan {
+    display: flex;
+    flex-direction: row;  
+    height: 100%;  
+    align-items: center;
+}
+
+.music-icon {
+    margin-left: 24px;
+}
+
+.plan-value {
+    margin-left: 20px;
+}
+.change-plan a {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #382AE1;
+    margin-right: 24px;
+}
+
+.payment {
+    height: 50px;
+    width: 354px;
+    border-radius: 11px;
+    margin-top: 32px;
+    background-color: var(--background-card-color);
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    border: none;
+    color: var(--white);
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: var(--desaturated-blue);
+}
+
+.annual-plan {
+    height: 21px;
+    left: 0%;
+    right: -27.38%;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 21px;
+    color: #1F2E55;
+}
+
+.price {
+    height: 21px;
+    left: 0%;
+    right: 0%;
+    margin-top: 6px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #717FA6;
+}
+
+.cancel-order {
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    left: 39.11%;
+    right: 39.56%;
+    margin-top: 32px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    color: #717FA6;
+}
+@media only screen and (max-width: 375px) { 
+
+    html, body{
+        height: 100%;
+        width: 100%;
+        background: url("./images/pattern-background-mobile.svg"), var(--background-color);
+        background-repeat: no-repeat;
+        background-size: 100% 194px;
+    }
+
+    h1 {
+        font-size: 22px;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    .container {
+        width: 327px;
+        height: 567px;
+    }
+
+    .image {
+        width: 327px;
+        height: 160px;
+    }
+
+    .content {
+        margin-top: 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan {
+        width: 279px !important;
+        height: 81px !important;
+    }
+
+    .payment {
+        height: 50px;
+        width: 279px;
+        border-radius: 11px;
+    }
+}
