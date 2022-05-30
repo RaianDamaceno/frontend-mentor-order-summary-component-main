@@ -18,7 +18,7 @@ body, html {
     align-items: center;
     background: url("./images/pattern-background-desktop.svg"), var(--background-color);
     background-repeat: no-repeat;
-    background-size: 100% 437px;
+    background-size: 100% 537px;
 }
 
 h1 {
@@ -95,6 +95,7 @@ h3 {
 .plan-value {
     margin-left: 20px;
 }
+
 .change-plan a {
     font-family: 'Red Hat Display';
     font-style: normal;
@@ -115,6 +116,10 @@ h3 {
     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
     border: none;
     color: var(--white);
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
 }
 
 .circle {
@@ -201,7 +206,7 @@ h3 {
     }
 
     .payment {
-        height: 50px;
+        height: 100px;
         width: 279px;
         border-radius: 11px;
     }
